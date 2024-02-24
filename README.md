@@ -26,4 +26,4 @@ This is a simple React application that allows users to search for recipes based
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
 - EkaTur - savosya23@gmail.com
-Link: https://github.com/your_username/Recipes-
+Link: https://github.com/your_username/Recipes
