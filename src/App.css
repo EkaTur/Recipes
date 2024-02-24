@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    margin-top: 50px;
+    width: 220px;
+    font-size: 16px;
+    box-shadow: inset 0px 0px 0px 4px #1eac42;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+    background-color: rgba(255, 255, 255, 0.7) ;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+    list-style: none;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.CaloriesPar {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.RecipePic {
+    border-radius: 10px;
+}
+
+.changeWidth {
+    text-align: center;
+}
+
+hr.style-five {
+    border: 0;
+    height: 0;
+    width: 100%;
+    box-shadow: 0 0 10px 1px rgb(199, 196, 196);
+}
+
+hr.style-five {
+    border: 0;
+    height: 0;
+    width: 100%;
+    -webkit-box-shadow: 0 0 10px 1px rgb(227, 220, 220);
+    box-shadow: 0 0 10px 1px rgb(243, 237, 237);
+}
+
+.DietLabelsPar {
+    display: inline;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 3px;
 }
