@@ -49,7 +49,7 @@ function App() {
   return (
     <div>
       <div>
-        <video loop={true} muted={true} autoplay={true} playsinline={true}>
+        <video autoPlay muted loop>
           <source src={Video} type="video/mp4" />
         </video>
       </div>
