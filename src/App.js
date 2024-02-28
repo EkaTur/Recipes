@@ -49,7 +49,11 @@ function App() {
   return (
     <div>
       <div>
+<<<<<<< HEAD
         <video autoPlay muted loop>
+=======
+        <video loop muted autoplay playsinline>
+>>>>>>> d8122c1402cfc478da3966ac661cb925fc56493f
           <source src={Video} type="video/mp4" />
         </video>
       </div>
