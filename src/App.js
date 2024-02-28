@@ -58,7 +58,7 @@ function App() {
   return (
     <div>
       <div onTouchStart={handleTouchStart}>
-        <video ref={videoRef} autoPlay muted loop controls>
+        <video ref={videoRef} autoPlay muted loop controls playsinline>
           <source src={Video} type="video/mp4" />
         </video>
       </div>
