@@ -48,7 +48,7 @@ function App() {
 
   const videoRef = useRef(null);
 
-  const handleTouchStart = () => {
+  const handleTouchStart = (event) => {
     event.preventDefault();
     if (videoRef.current) {
       videoRef.current.play();
