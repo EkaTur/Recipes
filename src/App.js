@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useState, useRef } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 import './App.css';
 import Video from './Assets/food.mp4';
 import SearchPic from './Assets/search.png';
@@ -46,19 +46,10 @@ function App() {
     setWordSubmitted(mySearch);
   }
 
-  const videoRef = useRef(null);
-
-  const handleTouchStart = (event) => {
-    event.preventDefault();
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  };
-
   return (
     <div>
-      <div onTouchStart={handleTouchStart}>
-        <video ref={videoRef} loop={true} muted={true} autoplay={true} playsinline={true}>
+      <div>
+        <video loop={true} muted={true} autoplay={true} playsinline={true}>
           <source src={Video} type="video/mp4" />
         </video>
       </div>
