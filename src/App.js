@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useState, useRef } from 'react';
 import './App.css';
 import Video from './Assets/food.mp4';
 import SearchPic from './Assets/search.png';
@@ -46,10 +46,18 @@ function App() {
     setWordSubmitted(mySearch);
   }
 
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  }, []);
+
   return (
     <div>
       <div>
-        <video autoPlay muted loop>
+        <video ref={videoRef} autoPlay muted loop>
           <source src={Video} type="video/mp4" />
         </video>
       </div>
