@@ -48,15 +48,15 @@ function App() {
 
   const videoRef = useRef(null);
 
-  useEffect(() => {
+  const handleTouchStart = () => {
     if (videoRef.current) {
       videoRef.current.play();
     }
-  }, []);
+  };
 
   return (
     <div>
-      <div>
+      <div onTouchStart={handleTouchStart}>
         <video ref={videoRef} autoPlay muted loop>
           <source src={Video} type="video/mp4" />
         </video>
