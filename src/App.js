@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div>
-      <div>
+      <div className='App'>
         <video autoPlay muted loop>
           <source src={Video} type="video/mp4" />
         </video>
