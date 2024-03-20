@@ -2,6 +2,10 @@
 
 This is a simple React application that allows users to search for recipes based on ingredients. Users can input a keyword, such as "salmon" or "chicken", and the application fetches recipes from the Edamam API.
 
+## Live Demo
+
+You can check out the live version of this website [here](https://get-recipe.netlify.app/).
+
 ## Features
 
 - Search for recipes using keywords.
